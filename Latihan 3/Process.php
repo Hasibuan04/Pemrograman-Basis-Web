@@ -10,9 +10,10 @@ if ($conn->connect_error) {
     die("Koneksi gagal: " . $conn->connect_error);
 }
 
-$nama = $_POST['nama'];
-$email = $_POST['email'];
-$pesan = $_POST['pesan'];
+$kodeproduk = $_POST['kodeproduk'];
+$namamakanan = $_POST['namamakanan'];
+hargajual = $_POST['hargajual'];
+beratisi = $_POST['beratisi'];
 
 $sql = "INSERT INTO kontak (nama, email, pesan) VALUES ('$nama', '$email', '$pesan')";
 
